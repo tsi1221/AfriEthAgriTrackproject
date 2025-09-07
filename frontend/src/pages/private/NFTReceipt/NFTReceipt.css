@@ -1,0 +1,86 @@
+.nft-receipt-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.nft-receipt-container h2 {
+  color: #28a745;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.nft-receipt-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.nft-receipt-card th, 
+.nft-receipt-card td {
+  padding: 15px;
+  border: 1px solid #eee;
+  text-align: center;
+  font-size: 16px;
+}
+
+.nft-receipt-card th {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.nft-receipt-card td {
+  color: #555;
+}
+
+.grand-total {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.nft-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nft-buttons button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nft-buttons button:first-child {
+  background-color: #007bff;
+}
+
+.nft-buttons button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.nft-buttons button:last-child {
+  background-color: #28a745;
+}
+
+.nft-buttons button:last-child:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .nft-buttons {
+    flex-direction: column;
+  }
+
+  .nft-buttons button {
+    width: 100%;
+  }
+}

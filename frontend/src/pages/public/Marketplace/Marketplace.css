@@ -1,0 +1,262 @@
+/* ===============================
+   Global Styles
+   Brand Colors: Green (#28a745), White (#fff), Black (#000)
+================================ */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f8f6;
+  color: #333;
+}
+
+/* ===============================
+   Navbar
+================================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  background-color: #28a745;
+  border-radius: 9px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 50px;
+  z-index: 100;
+}
+
+.navbar-logo {
+  width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+/* ===============================
+   Marketplace Layout
+================================ */
+.marketplace-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+}
+
+.marketplace-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.marketplace-header h2 {
+  color: #28a745;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.marketplace-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* ===============================
+   Crop Cards
+================================ */
+.crop-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.crop-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+}
+
+.crop-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.crop-card h3 {
+  color: #28a745;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.crop-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.crop-card p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.crop-card button {
+  margin-top: 12px;
+  padding: 12px;
+  width: 100%;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.crop-card button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   Cart Summary
+================================ */
+.cart-summary {
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.cart-summary h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #28a745;
+  font-size: 24px;
+}
+
+.cart-summary ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #218838;
+}
+
+.quantity-controls span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Cart Total */
+.cart-summary p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  color: #000;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+  display: block;
+  width: 20%;
+  padding: 14px;
+  background-color: #d16004;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #e63a06;
+  transform: scale(1.03);
+}
+
+/* ===============================
+   Responsive Design
+================================ */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    width: 50px;
+  }
+
+  .marketplace-header h2 {
+    font-size: 28px;
+  }
+
+  .crop-list {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}

@@ -1,0 +1,121 @@
+/* Brand Colors: Green (#28a745), White (#fff), Black (#000) */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #28a745; /* Green background */
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px; /* More padding for spacious layout */
+  box-sizing: border-box;
+}
+
+.signup-card {
+  background-color: #fff;
+  padding: 10px 50px; /* Increased padding */
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px; /* Wider card */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3); /* Deeper shadow for focus */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+.signup-logo {
+  width: 100px; /* Bigger logo */
+  margin-bottom: 30px; /* More spacing below logo */
+}
+
+h2 {
+  color: #28a745;
+  margin-bottom: 30px;
+  font-size: 32px; /* Larger title */
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 16px 18px; /* More padding */
+  margin: 14px 0; /* More spacing between fields */
+  border-radius: 12px; /* Slightly bigger radius */
+  border: 1px solid #ccc;
+  font-size: 17px; /* Slightly larger font */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 8px #28a745;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px; /* More spacing above button */
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px; /* Larger font */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #022009;
+  transform: scale(1.05); /* Slightly bigger hover effect */
+}
+
+p {
+  margin-top: 20px; /* More space above footer text */
+  font-size: 15px;
+}
+
+p a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 40px 25px;
+  }
+
+  .signup-logo {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  form input,
+  form select {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}

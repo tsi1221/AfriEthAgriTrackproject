@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  frontend:
+    build: ../frontend
+    ports:
+      - "3000:5173"
+    depends_on:
+      - backend
+  backend:
+    build: ../backend
+    ports:
+      - "5000:5000"
+    environment:
+      - SONIC_TESTNET_RPC=${SONIC_TESTNET_RPC}
+      - DEPLOYER_PRIVATE_KEY=${DEPLOYER_PRIVATE_KEY}
+      - CONTRACT_ADDRESS=${CONTRACT_ADDRESS}
+  ai:
+    build: ../ai
+    command: uvicorn predict_service:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"

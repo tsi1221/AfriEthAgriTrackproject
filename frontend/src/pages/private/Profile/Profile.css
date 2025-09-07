@@ -1,0 +1,95 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  margin-top: 7rem;
+  padding: 40px; /* increased padding */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.profile-container h2 {
+  color: #28a745;
+  margin-bottom: 30px; /* more space below title */
+  font-size: 30px; /* slightly bigger */
+}
+
+.profile-card {
+  text-align: left;
+}
+
+.profile-item {
+  margin: 20px 0; /* increased margin */
+  padding: 15px; /* more padding */
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-item strong {
+  color: #000;
+}
+
+.profile-item span {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Editable input */
+.profile-item input {
+  flex: 1;
+  margin-left: 20px;
+  padding: 8px 12px; /* more padding */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* Action buttons */
+.profile-actions {
+  margin-top: 30px; /* more top margin */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+}
+
+.profile-actions button {
+  padding: 12px 22px; /* bigger buttons */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Individual button styles */
+.edit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #a71d2a;
+}
