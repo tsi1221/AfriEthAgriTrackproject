@@ -67,7 +67,7 @@ const Marketplace = () => {
       (sum, item) => sum + item.price * item.quantity,
       0
     );
-    alert(`Thank you for your purchase!\nTotal: ${total} ETB`);
+    alert(`Thank you for your purchase!\nTotal: ${total} S`);
     setCart([]); // clear cart after purchase
   };
 
@@ -83,7 +83,7 @@ const Marketplace = () => {
             <img src={crop.image} alt={crop.name} className="crop-image" />
             <h3>{crop.name}</h3>
             <p className="crop-description">{crop.description}</p>
-            <p><strong>{crop.price} ETB</strong> / kg</p>
+            <p><strong>{crop.price} s</strong> / kg</p>
             <p>Stock: {crop.stock} kg</p>
             <button onClick={() => addToCart(crop)}>Add to Cart</button>
           </div>

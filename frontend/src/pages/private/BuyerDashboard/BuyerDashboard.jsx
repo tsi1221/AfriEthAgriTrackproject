@@ -165,7 +165,7 @@ function BuyerDashboard() {
               <div className="left-col">
                 {/* Wallet KPI */}
                 <div className="card kpi">
-                  <div className="kpi-value">{walletBalance.toLocaleString()} {t("etb")}</div>
+                  <div className="kpi-value">{walletBalance.toLocaleString()} {t("S")}</div>
                   <div className="kpi-label">{t("walletBalance")}</div>
                 </div>
 
@@ -177,7 +177,7 @@ function BuyerDashboard() {
                       <tr>
                         <th>Crop</th>
                         <th>{t("qty")}</th>
-                        <th>{t("total")} ({t("etb")})</th>
+                        <th>{t("total")} ({t("S")})</th>
                         <th>Date</th>
                       </tr>
                     </thead>

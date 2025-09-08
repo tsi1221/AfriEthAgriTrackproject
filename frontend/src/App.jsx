@@ -14,13 +14,15 @@ import FarmerDashboard from "./components/FarmerDashboard/FarmerDashboard";
 import ProfileDashboard from "./components/ProfileDashboard/ProfileDashboard";
 import AddProduct from "./components/AddProduct/AddProduct";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Home from "./pages/public/Home/Home";
 function App() {
   return (
     <ThemeProvider>
       <Router>
         <Routes>
           {/* Public Routes */}
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/marketplace" element={<Marketplace />} />
 
