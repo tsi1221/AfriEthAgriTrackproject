@@ -22,6 +22,14 @@ Tech Stack
 
 Frontend: React (Vite)
 
+
+Backend: Node.js + Express
+
+Blockchain: Sonic Testnet, Hardhat, Ethers.js
+
+AI Service: Python + FastAPI + Uvicorn
+
+
 Backend: Node.js + Express
 
 Blockchain: Sonic Testnet, Hardhat, Ethers.js
